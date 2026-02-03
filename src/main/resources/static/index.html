@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Inventory AI Assistant</h1>
+            <div class="status" id="status">
+                <span class="status-dot offline"></span>
+                <span id="status-text">Checking AI...</span>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    <div class="message-content">
+                        <p>Kumusta! I'm your AI assistant for inventory and sales. Try asking me:</p>
+                        <ul>
+                            <li>"pa-show ng lahat ng materials"</li>
+                            <li>"magkano kinita ko today?"</li>
+                            <li>"ano ang low stock items?"</li>
+                            <li>"ano ang best selling ngayong week?"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your message here... (e.g., 'magkano kinita ko today?')"
+                    autocomplete="off"
+                >
+                <button id="sendButton" onclick="sendMessage()">
+                    <span id="buttonText">Send</span>
+                    <span id="buttonLoader" class="loader hidden"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Quick Actions:</h3>
+            <button onclick="quickMessage('pa-show ng lahat ng materials')">📦 View Materials</button>
+            <button onclick="quickMessage('magkano kinita ko today?')">💰 Profit Today</button>
+            <button onclick="quickMessage('ano ang low stock items?')">⚠️ Low Stock</button>
+            <button onclick="quickMessage('ano ang best selling items ngayong week?')">🏆 Top Sellers</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

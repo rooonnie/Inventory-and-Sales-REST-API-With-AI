@@ -77,6 +77,26 @@ The application will start on `http://localhost:8080`
 - 4 Food Items (Chocolate Cake, Vanilla Cupcake, Cheese Pizza, Cappuccino)
 - 6 Sample Sales
 
+## Using the Web UI
+
+**Access the chat interface:**
+```
+http://localhost:8080
+```
+
+**Features:**
+- 🤖 Real-time AI chat with conversational Taglish support
+- 📊 Instant data visualization in chat
+- 🎯 Quick action buttons for common queries
+- 🟢 Live AI status indicator
+- 💬 Beautiful, responsive chat interface
+
+**Quick commands you can try:**
+- "pa-show ng lahat ng materials" - View all inventory
+- "magkano kinita ko today?" - Check today's profit
+- "ano ang low stock items?" - View low stock alerts
+- "ano ang best selling items?" - Top selling products
+
 ## API Endpoints
 
 ### Health Check
